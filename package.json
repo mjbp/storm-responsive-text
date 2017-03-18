@@ -1,21 +1,24 @@
 {
   "name": "storm-responsive-text",
   "version": "0.1.0",
-  "description": "Fot text to the parent container",
+  "description": "Sets font-size to fit the full width of parent container",
   "author": "stormid",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/mjbp/storm-responsive-text"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/mjbp/storm-responsive-text/issues"
   },
-  "main": "",
+  "main": "dist/storm-responsive-text",
   "keywords": [
     "stormid",
     "ui",
-    "component"
+    "component",
+    "fit-text",
+    "big-text",
+    "typography"
   ],
   "scripts": {
     "build": "gulp build",
@@ -54,10 +57,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "classlist-polyfill": "^1.0.3",
-    "es6-object-assign": "^1.0.3",
-    "es6-promise": "^4.1.0",
     "lodash.throttle": "^4.1.1",
-    "picturefill": "^3.0.2"
+    "storm-load": "^1.0.0"
   }
 }

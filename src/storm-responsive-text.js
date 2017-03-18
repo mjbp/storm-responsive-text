@@ -1,7 +1,6 @@
 import throttle from 'lodash.throttle';
 
 const defaults = {
-	selector: '.js-fit',
 	fittedClassName: 'is--fitted',
 	minFontSizePx: null,
 	maxFontSizePx: 528
@@ -29,11 +28,11 @@ const wholeNumberFontSizeOnly = () => {
 };
 
 const testLineDimensions = (element, maxWidth, property, size, interval, units, previousWidth) => {
-	let width;
+	let width = element.offsetWidth;
+	
+		previousWidth = typeof previousWidth === 'number' ? previousWidth : 0;
 
-	previousWidth = typeof previousWidth === 'number' ? previousWidth : 0;
 	element.style[property] = size + units;
-	width = element.offsetWidth;
 	
 	if(width >= maxWidth) {
 		element.style[property] = '';

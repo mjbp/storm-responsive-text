@@ -1,6 +1,6 @@
 /**
- * @name storm-responsive-text: Fot text to the parent container
- * @version 0.1.0: Thu, 09 Mar 2017 15:40:21 GMT
+ * @name storm-responsive-text: Sets font-size to fit the full width of parent container
+ * @version 0.1.0: Sat, 18 Mar 2017 22:38:34 GMT
  * @author stormid
  * @license MIT
  */
@@ -465,7 +465,6 @@ function toNumber(value) {
 var index = throttle;
 
 var defaults = {
-  selector: '.js-fit',
   fittedClassName: 'is--fitted',
   minFontSizePx: null,
   maxFontSizePx: 528
@@ -492,11 +491,11 @@ var wholeNumberFontSizeOnly = function wholeNumberFontSizeOnly() {
 };
 
 var testLineDimensions = function testLineDimensions(element, maxWidth, property, size, interval, units, previousWidth) {
-  var width = void 0;
+  var width = element.offsetWidth;
 
   previousWidth = typeof previousWidth === 'number' ? previousWidth : 0;
+
   element.style[property] = size + units;
-  width = element.offsetWidth;
 
   if (width >= maxWidth) {
     element.style[property] = '';

@@ -1,7 +1,3 @@
-import 'es6-promise/auto';
-require('classlist-polyfill');
-require('es6-object-assign').polyfill();
-require('picturefill');
 import Load from 'storm-load';
 
 const onLoadTasks = [() => {
