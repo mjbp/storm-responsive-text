@@ -4,7 +4,7 @@
 [![codecov.io](http://codecov.io/github/mjbp/storm--responsive-text/coverage.svg?branch=master)](http://codecov.io/github/mjbp/storm-responsive-text?branch=master)
 [![npm version](https://badge.fury.io/js/storm-responsive-text.svg)](https://badge.fury.io/js/storm-responsive-text)
 
-Sets font-size of a single word/number to fit the full width of parent container. Use with caution to avoid reflow issues.
+Sets font-size of a single word/number to fit the full width of parent container. Use with caution/restraint to avoid performance issues.
 
 ## Example
 [https://mjbp.github.io/storm-responsive-text](https://mjbp.github.io/storm-responsive-text)
@@ -61,4 +61,4 @@ None
 MIT
 
 ## Credit
-Developed from an initial fork of (BigText)[https://github.com/zachleat/BigText]
+Developed from an initial fork of [BigText](https://github.com/zachleat/BigText)
