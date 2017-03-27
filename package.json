@@ -1,6 +1,6 @@
 {
   "name": "storm-responsive-text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sets font-size to fit the full width of parent container",
   "author": "stormid",
   "license": "MIT",
